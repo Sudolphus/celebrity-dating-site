@@ -2,3 +2,15 @@
   display: none;
   text-align: center;
 }
+
+#hiddenQuiz {
+  display: none;
+}
+
+#underAge {
+  display: none;
+}
+
+#genderError, #dateError, #religionError {
+  display: none;
+}
