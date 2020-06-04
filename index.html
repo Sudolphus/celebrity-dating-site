@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dummy Title</title>
+    <title>Celebrity Dating Site</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.1.js"></script>
@@ -9,7 +9,34 @@
   </head>
   <body>
     <div class="container">
-      
+      <div class="page-header">
+        <h1>Celebrity Dating!</h1>
+        <small>Celebrities exist! You can date them maybe!</small>
+      </div>      
     </div>
+
+    <form>
+      <div class="form-group">
+        <p>Pick a gender:  </p>
+        <input type='radio' name='gender' id='male' value='male'>
+        <label for='male'>Male</label>
+        <input type='radio' name='gender' id='female' value='female'>
+        <label for='female'>Female</label>
+        <input type='radio' name='gender' id='other' value='other'>
+        <label for='other'>Other</label>
+      </div>
+      <div class="form-group">
+        <label for="firstDate">Describe your ideal first date:</label>
+        <input type="text" name="firstDate" class="form-control" id="firstDate">
+      </div>
+      <div class="form-group">
+        <p>What religion are you?</p>
+        <input type='radio' name='religion' id='hindu' value="Hindu">
+        <label for='hindu'>Hindu</label>
+        <input type='radio' name='religion' id='other' value='Other'>
+        <label for='other'>Other</label>
+      </div>
+      <button class="btn btn-success" type=submit>Submit Answers!</button>
+    </form>
   </body>
 </html>
