@@ -13,45 +13,45 @@
         <h1>Celebrity Dating!</h1>
         <small>Celebrities exist! You can date them maybe!</small>
       </div>      
-    </div>
 
     <div id="underAge">
       <h2>Go away kid, you're bothering me.</h2>
     </div>
-    <form id="hiddenQuiz">
-      <div class="form-group">
-        <p>Pick a gender:  </p>
-        <div class="radio-inline">
-          <label for='male'><input type='radio' name='gender' id='male' value='male'>Male</label>
+      <form id="hiddenQuiz">
+        <div class="form-group">
+          <p>Pick a gender:  </p>
+          <div class="radio-inline">
+            <label for='male'><input type='radio' name='gender' id='male' value='male'>Male</label>
+          </div>
+          <div class="radio-inline">
+            <label for='female'><input type='radio' name='gender' id='female' value='female'>Female</label>
+          </div> 
+          <div class="radio-inline">
+            <label for='other'><input type='radio' name='gender' id='other' value='other'>Other</label>
+          </div>
+          <span class="help-block has-error" id="genderError">You gotta pick one</span>
         </div>
-        <div class="radio-inline">
-          <label for='female'><input type='radio' name='gender' id='female' value='female'>Female</label>
-        </div> 
-        <div class="radio-inline">
-          <label for='other'><input type='radio' name='gender' id='other' value='other'>Other</label>
+        <div class="form-group">
+          <label for="firstDate">Describe your ideal first date:</label>
+          <input type="text" name="firstDate" class="form-control" id="firstDate" placeholder="Give it to him!">
+          <span class="help-block has-error" id="dateError">You gotta fill it in</span>
         </div>
-        <span class="help-block has-error" id="genderError">You gotta pick one</span>
+        <div class="form-group">
+          <p>What religion are you?</p>
+          <input type='radio' name='religion' id='hindu' value="Hindu">
+          <label for='hindu'>Hindu</label>
+          <input type='radio' name='religion' id='other' value='Other' disabled>
+          <label for='other'>Other</label>
+          <span class="help-block has-error" id="religionError">You gotta pick one</span>
+        </div>
+        <button class="btn btn-success" id="submit" type=submit>Submit Answers!</button>
+        <button class="btn btn-success" id="reset" type=reset>Reset Quiz</button>
+      </form>
+      <div id="hiddenCage">
+        <h3>Congratulations, it's Nicolas Cage!</h3>
+        <p>He's everybody's perfect match!</p>
+        <img src="img/cage.jpeg">
       </div>
-      <div class="form-group">
-        <label for="firstDate">Describe your ideal first date:</label>
-        <input type="text" name="firstDate" class="form-control" id="firstDate" placeholder="Give it to him!">
-        <span class="help-block has-error" id="dateError">You gotta fill it in</span>
-      </div>
-      <div class="form-group">
-        <p>What religion are you?</p>
-        <input type='radio' name='religion' id='hindu' value="Hindu">
-        <label for='hindu'>Hindu</label>
-        <input type='radio' name='religion' id='other' value='Other' disabled>
-        <label for='other'>Other</label>
-        <span class="help-block has-error" id="religionError">You gotta pick one</span>
-      </div>
-      <button class="btn btn-success" id="submit" type=submit>Submit Answers!</button>
-      <button class="btn btn-success" id="reset" type=reset>Reset Quiz</button>
-    </form>
-    <div id="hiddenCage">
-      <h3>Congratulations, it's Nicolas Cage!</h3>
-      <p>He's everybody's perfect match!</p>
-      <img src="img/cage.jpeg">
     </div>
   </body>
 </html>
